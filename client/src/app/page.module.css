@@ -1,0 +1,11 @@
+.container {
+  overflow: scroll;
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+}
+
+.part {
+  height: 100vh;
+  scroll-snap-align: start;
+  position: relative;
+}
