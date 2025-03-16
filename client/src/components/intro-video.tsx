@@ -1,3 +1,11 @@
+import style from "./intro-video.module.css";
+
 export default function IntroVideo() {
-  return <div>이곳은 숙소의 간단한 영상 화면이 들어갈 예정입니다.</div>;
+  return (
+    <div className={style.container}>
+      <video className={style.content} preload="auto" muted autoPlay loop>
+        <source src="/media/demo.mp4" type="video/mp4" />
+      </video>
+    </div>
+  );
 }
